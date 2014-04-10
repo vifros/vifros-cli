@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 // TODO: Use only `director` since `flatiron` is too much overload.
 var path = require('path');
 var flatiron = require('flatiron');
@@ -14,6 +13,9 @@ app.config.file({ file: path.join(__dirname, 'config', 'config.json') });
 app.use(flatiron.plugins.cli, {
 	version: true
 });
+
+// Load command completions.
+require('./lib/common/completion');
 
 // Initialize commands.
 commands.init(app);
