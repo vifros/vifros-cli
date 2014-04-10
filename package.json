@@ -13,6 +13,6 @@
 		"flatiron" : "*",
 		"request"  : "*",
 
-		"vifros-common": "https://github.com/vifros/vifros-common.git"
+		"vifros-common": "git+https://github.com/vifros/vifros-common.git"
 	}
 }
