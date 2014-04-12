@@ -3,6 +3,8 @@
 var path = require('path');
 var flatiron = require('flatiron');
 
+process.title = 'vifros';
+
 var commands = require('./lib/commands');
 
 var app = flatiron.app;
