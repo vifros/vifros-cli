@@ -3,7 +3,7 @@
 	"version"     : "0.0.0",
 	"description" : "",
 	"bin"         : {
-		"vifros": "./app.js"
+		"vifros": "./bin/vifros.js"
 	},
 	"preferGlobal": true,
 	"private"     : true,

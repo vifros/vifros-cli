@@ -5,11 +5,11 @@ var flatiron = require('flatiron');
 
 process.title = 'vifros';
 
-var commands = require('./lib/commands');
+var commands = require('../lib/commands');
 
 var app = flatiron.app;
 
-app.version = require('./package.json').version;
+app.version = require('./../package.json').version;
 app.config.file({ file: path.join(__dirname, 'config', 'config.json') });
 
 app.use(flatiron.plugins.cli, {
@@ -17,7 +17,7 @@ app.use(flatiron.plugins.cli, {
 });
 
 // Load command completions.
-require('./lib/common/completion');
+require('./../lib/common/completion');
 
 // Initialize commands.
 commands.init(app);
