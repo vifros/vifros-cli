@@ -13,8 +13,6 @@
 		"complete" : "*",
 		"flatiron" : "*",
 		"request"  : "*",
-		"lodash"   : "*",
-
-		"vifros-common": "git+https://github.com/vifros/vifros-common.git"
+		"lodash"   : "*"
 	}
 }
