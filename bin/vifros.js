@@ -1,4 +1,4 @@
-#!/usr/bin/env nodejs
+#!/usr/bin/env node
 // TODO: Migrate to only `director` since `flatiron` is too much overload.
 var path = require('path');
 var flatiron = require('flatiron');

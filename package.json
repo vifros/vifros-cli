@@ -9,6 +9,7 @@
   "private"     : true,
   "dependencies": {
     "cli-table": "*",
+    "cliff"    : "*",
     "colors"   : "*",
     "complete" : "*",
     "flatiron" : "*",
