@@ -8,12 +8,13 @@
   "preferGlobal": true,
   "private"     : true,
   "dependencies": {
-    "cli-table": "*",
-    "cliff"    : "*",
-    "colors"   : "*",
-    "complete" : "*",
-    "flatiron" : "*",
-    "request"  : "*",
-    "lodash"   : "*"
+    "cli-table"   : "*",
+    "cliff"       : "*",
+    "colors"      : "*",
+    "complete"    : "*",
+    "flatiron"    : "*",
+    "request"     : "*",
+    "lodash"      : "*",
+    "url-template": "*"
   }
 }
