@@ -15,6 +15,9 @@
     "flatiron"    : "*",
     "request"     : "*",
     "lodash"      : "*",
-    "url-template": "*"
+    "url-template": "*",
+    "nconf"       : "~0.6.9",
+    "winston"     : "~0.8.0",
+    "prompt"      : "~0.2.14"
   }
 }
