@@ -6,6 +6,8 @@
 - Add new verb: `configure` that will drop users in a vifros REPL using the
  Node.js REPL.
 
+- Get the API schema for routes from the API itself.
+
 - Optimize the app so delays for executing commands are nearly not noticed.
 
 #### Some notes on delays:

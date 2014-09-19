@@ -19,26 +19,28 @@ if (process.argv.indexOf('--compgen') != -1) {
   process.exit(0);
 }
 
-// TODO: Migrate to only `director` since `flatiron` is too much overload.
-var path = require('path');
-var flatiron = require('flatiron');
-
+// Set what is displayed in `ps`.
 process.title = 'vifros';
 
-var commands = require('../lib/commands');
-var app = flatiron.app;
-
-app.version = require('./../package.json').version;
-// TODO: The config line is really needed? It is somehow being used?
-app.config.file({ file: path.join(__dirname, 'config', 'config.json') });
-
-app.use(flatiron.plugins.cli, {
-  version: true
+/*
+ * Initialize commands.
+ * It will lazy-load all modules the specific command needs,
+ * including commands themselves and routes.
+ *
+ * This is an optimization to increase the commands execution speed.
+ */
+require('./../lib/commands').init(function (error) {
+  process.exit(error ? 1 : 0);
 });
 
-// Initialize commands.
-commands.init(app);
+/*
+ * Log uncaught errors and act accordingly.
+ * http://shapeshed.com/uncaught-exceptions-in-node/
+ */
+process.on('uncaughtException', function cbOnUncaughtException(error) {
+  // TODO: Maybe don't output the error, just the exit code?
+  console.log(error);
 
-app.start(function (error) {
-  process.exit(error ? 1 : 0);
+  // Exit the app with error status.
+  process.exit(1);
 });

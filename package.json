@@ -12,7 +12,6 @@
     "cliff"       : "*",
     "colors"      : "*",
     "complete"    : "*",
-    "flatiron"    : "*",
     "request"     : "*",
     "lodash"      : "*",
     "url-template": "*",
