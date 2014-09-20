@@ -38,8 +38,7 @@ require('./../lib/commands').init(function (error) {
  * http://shapeshed.com/uncaught-exceptions-in-node/
  */
 process.on('uncaughtException', function cbOnUncaughtException(error) {
-  // TODO: Maybe don't output the error, just the exit code?
-  console.log(error);
+  console.error(error);
 
   // Exit the app with error status.
   process.exit(1);
