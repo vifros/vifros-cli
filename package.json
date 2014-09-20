@@ -9,12 +9,10 @@
   "private"     : true,
   "dependencies": {
     "cli-table"   : "*",
-    "cliff"       : "*",
     "colors"      : "*",
     "complete"    : "*",
     "request-lite": "*",
     "url-template": "*",
-    "winston"     : "~0.8.0",
     "prompt"      : "~0.2.14",
     "prettyjson"  : "*"
   }
