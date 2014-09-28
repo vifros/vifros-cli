@@ -13,7 +13,10 @@
     "complete"    : "*",
     "request-lite": "*",
     "url-template": "*",
-    "prompt"      : "~0.2.14",
-    "prettyjson"  : "*"
+    "prompt"      : "*",
+    "prettyjson"  : "*",
+    "lingo"       : "*",
+    "lodash"      : "*",
+    "netmask"     : "*"
   }
 }
