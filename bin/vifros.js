@@ -30,10 +30,6 @@ process.title = 'vifros';
  * This is an optimization to increase the commands execution speed.
  */
 require('./../lib/commands').init(function (error) {
-  if (error) {
-    console.log(error);
-  }
-
   process.exit(error ? 1 : 0);
 });
 
