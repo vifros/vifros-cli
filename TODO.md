@@ -1,6 +1,4 @@
 
-- Code the full set of verbs.
-
 - Add REPL capabilities for remote CLI execution.
 
 - Add new verb: `configure` that will drop users in a vifros REPL using the
